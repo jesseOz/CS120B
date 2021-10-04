@@ -25,7 +25,7 @@ PORTB  = 0x01;
 }
 else
 {
-PINB = 0x00;
+PORTB = 0x00;
 }
 
 }
