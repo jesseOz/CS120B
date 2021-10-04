@@ -15,20 +15,20 @@
 # that they are not ran in isolation but in the order shown and the state of the device is not reset or 
 # altered in between executions (unless preconditions are used).
 
-tests = [ {'description': 'PINA: 0x00 => PORTB: 0x02',
+tests = [ {'description': 'PINA: 0x00 => PORTC: 0x04',
     'steps': [ {'inputs': [('PINA',0x00)], 'iterations': 5 } ],
-    'expected': [('PORTB',0x02)],
+    'expected': [('PORTC',0x04)],
     },
-    {'description': 'PINA: 0x02 => PORTB: 0x02',
+    {'description': 'PINA: 0x02 => PORTC: 0x03',
     'steps': [ {'inputs': [('PINA',0x02)], 'iterations': 5 } ],
-    'expected': [('PORTB',0x02)],
+    'expected': [('PORTC',0x03)],
     },
-    {'description': 'PINA: 0x01 => PORTB: 0x01',
+    {'description': 'PINA: 0x0F => PORTC: 0x80',
     'steps': [ {'inputs': [('PINA',0x01)], 'iterations': 5 } ],
-    'expected': [('PORTB',0x01)],
+    'expected': [('PORTC',0x80)],
     },
     ]
-#watch = ['PORTB']
+#watch = ['PORTC']
 
 
 
