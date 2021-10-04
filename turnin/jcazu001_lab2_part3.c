@@ -42,7 +42,7 @@ PORTC = 0x01;
 
 if (PORTA == 0x0F)
 {
-PORTC == 0x80;
+PORTC = 0x80;
 }
 }
 														 												 					return 0;		 																	 					
