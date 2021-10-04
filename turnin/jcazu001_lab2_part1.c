@@ -19,13 +19,13 @@ int main(void) {
 //	unsigned char tmpB = 0x00; // Temporary variable to hold the value of B
 //	unsigned char tmpA = 0x00; // Temporary variable to hold the value of A
 while(1) {
-if ((PINA1 == 0) && (PINA0 == 1))
+if ((PORTA == 0x01))
 {
-PINB0  = 1; 
+PORTB  = 0x01; 
 }
 else
 {
-PINB 0 = 0;
+PINB = 0x00;
 }
 
 }
