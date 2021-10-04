@@ -25,27 +25,27 @@ if (PORTA == 0x00)
 PORTC = 0x04;
 }
 
-if (PORTA == 0x01 || PORTA == 0x02 || PORTA == 0x03 || PORTA == 0x04)
+else if (PORTA == 0x01 || PORTA == 0x02 || PORTA == 0x03 || PORTA == 0x04)
 {
 PORTC = 0x03; 
 }
 
-if (PORTA == 0x03 || PORTA == 0x05 || PORTA == 0x09 || PORTA == 0x0A || PORTA == 0x06 || PORTC == 0x0C)
+else if (PORTA == 0x03 || PORTA == 0x05 || PORTA == 0x09 || PORTA == 0x0A || PORTA == 0x06 || PORTC == 0x0C)
 {
 PORTC = 0x02;
 }
 
-if (PORTA == 0x07 || PORTA == 0x0E || PORTA == 0x0B || PORTA == 0x0D)
+else if (PORTA == 0x07 || PORTA == 0x0E || PORTA == 0x0B || PORTA == 0x0D)
 {
 PORTC = 0x01;
 }
 
-if (PORTA == 0x0F)
+else 
 {
 PORTC = 0x80;
 }
 }
-														 												 					return 0;		 																	 					
+	return 1;													 												 					return 0;		 																	 					
 }
 				 											
 
